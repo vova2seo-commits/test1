@@ -1,0 +1,85 @@
+import React from 'react';
+
+const App = () => {
+  return (
+    <div className="min-h-screen bg-gray-50 font-sans text-gray-900">
+      {/* Header / Hero Section */}
+      <header className="bg-white border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl font-extrabold tracking-tight text-blue-600 sm:text-5xl md:text-6xl uppercase">
+            PPC Marketing Experts
+          </h1>
+          <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
+            Effective Digital Marketing Services to Maximize Your ROI and Grow Your Business Overall.
+          </p>
+          <div className="mt-8">
+            <a
+              href="#contact"
+              className="inline-block bg-blue-600 px-8 py-3 border border-transparent text-base font-medium rounded-md text-white hover:bg-blue-700 transition"
+            >
+              Contact Specialist
+            </a>
+          </div>
+        </div>
+      </header>
+
+      {/* Services Section */}
+      <main className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3">
+          {/* Service 1 */}
+          <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+            <h3 className="text-lg font-bold text-gray-900">Digital Marketing Services</h3>
+            <p className="mt-2 text-gray-600">
+              Targeted Keyword Research & Bidding. We find the right words to put your brand in front of the right audience at the right time.
+            </p>
+          </div>
+
+          {/* Service 2 */}
+          <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+            <h3 className="text-lg font-bold text-gray-900">Landing Page Optimization</h3>
+            <p className="mt-2 text-gray-600">
+              Compelling Ad Creation & A/B Testing. We don't just drive traffic; we optimize your pages to ensure every click counts.
+            </p>
+          </div>
+
+          {/* Service 3 */}
+          <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+            <h3 className="text-lg font-bold text-gray-900">PPC Campaign Optimization</h3>
+            <p className="mt-2 text-gray-600">
+              Ongoing Test and Optimization. Constant monitoring and data-driven adjustments to keep your conversion rates high.
+            </p>
+          </div>
+        </div>
+
+        {/* Benefits Section */}
+        <section className="mt-20">
+          <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">Why Partner with Us?</h2>
+          <div className="bg-blue-600 rounded-2xl p-8 text-white grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h4 className="text-xl font-semibold mb-2">Increase Sales & Leads</h4>
+              <p className="opacity-90">
+                Our core focus is maximizing your return on investment through custom strategy development tailored to your niche.
+              </p>
+            </div>
+            <div>
+              <h4 className="text-xl font-semibold mb-2">Positive Branding Impact</h4>
+              <p className="opacity-90">
+                Reach new customers and build a sustainable brand presence with high-quality, professional marketing assets.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      {/* Footer */}
+      <footer id="contact" className="bg-gray-100 mt-20 py-12 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 text-center">
+          <p className="text-gray-500">© 2026 PPC Marketing Experts Agency. All rights reserved.</p>
+          <p className="mt-2 text-sm text-gray-400 italic">This domain is available for partnership or acquisition.</p>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default App;
