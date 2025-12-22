@@ -8,10 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
-        .gradient-text {
-            background: linear-gradient(90-deg, #3b82f6, #2563eb);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .bg-grid-slate-100 {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(241 245 249 / 1)'%3E%3Cpath d='M0 .5H31.5V32'/%3E%3C/svg%3E");
         }
     </style>
 </head>
@@ -21,17 +19,21 @@
     <header class="relative bg-white border-b border-slate-200 overflow-hidden">
         <div class="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] -z-10"></div>
         <div class="max-w-7xl mx-auto px-4 py-24 sm:px-6 lg:px-8 text-center">
-            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800 mb-4">
-                Exclusive Opportunity
-            </span>
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
+            <div class="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-bold bg-red-100 text-red-600 mb-6 animate-pulse">
+                🔥 SPECIAL OFFER: 90% OFF
+            </div>
+            <h1 class="text-4xl md:text-7xl font-extrabold tracking-tight mb-4">
                 velizarsofranov.com
             </h1>
             <p class="text-2xl text-blue-600 font-bold mb-8 italic">Available for Immediate Acquisition</p>
             
             <div class="bg-white border-2 border-blue-600 rounded-3xl p-8 shadow-2xl max-w-lg mx-auto transform transition hover:scale-105">
-                <p class="text-gray-500 uppercase tracking-widest font-semibold text-sm mb-2">Buy It Now Price</p>
-                <div class="text-5xl font-black text-slate-900 mb-6">$500</div>
+                <div class="flex justify-center items-center gap-4 mb-2">
+                    <span class="text-gray-400 line-through text-2xl font-semibold">$1,200</span>
+                    <span class="bg-green-100 text-green-700 text-xs font-bold px-2 py-1 rounded">SAVE $700</span>
+                </div>
+                <p class="text-gray-500 uppercase tracking-widest font-semibold text-sm mb-2">Current Price</p>
+                <div class="text-6xl font-black text-slate-900 mb-6">$500</div>
                 <a href="https://www.atom.com/view/name/velizarsofranov.com" target="_blank" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-xl font-bold py-4 rounded-2xl shadow-lg transition-all">
                     Secure This Domain on Atom
                 </a>
@@ -45,18 +47,21 @@
 
     <!-- Marketing Pitch -->
     <section class="max-w-7xl mx-auto px-4 py-16 text-center">
-        <h2 class="text-3xl font-bold mb-12 italic text-slate-800">Why this domain?</h2>
+        <h2 class="text-3xl font-bold mb-12 italic text-slate-800">Why invest in this asset?</h2>
         <div class="grid md:grid-cols-3 gap-8">
-            <div class="p-6">
-                <h3 class="text-xl font-bold mb-2 text-blue-600">Brand Potential</h3>
+            <div class="p-8 bg-white rounded-2xl shadow-sm border border-slate-100">
+                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 font-bold">01</div>
+                <h3 class="text-xl font-bold mb-2 text-slate-900">Brand Potential</h3>
                 <p class="text-slate-600">Perfect for personal branding, consulting, or a niche digital marketing agency. Memorable and professional.</p>
             </div>
-            <div class="p-6">
-                <h3 class="text-xl font-bold mb-2 text-blue-600">SEO Ready</h3>
+            <div class="p-8 bg-white rounded-2xl shadow-sm border border-slate-100">
+                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 font-bold">02</div>
+                <h3 class="text-xl font-bold mb-2 text-slate-900">SEO Ready</h3>
                 <p class="text-slate-600">Clean history and dot-com authority. Ideal for landing page optimization and high-ROI PPC campaigns.</p>
             </div>
-            <div class="p-6">
-                <h3 class="text-xl font-bold mb-2 text-blue-600">Market Value</h3>
+            <div class="p-8 bg-white rounded-2xl shadow-sm border border-slate-100">
+                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 font-bold">03</div>
+                <h3 class="text-xl font-bold mb-2 text-slate-900">Digital Asset</h3>
                 <p class="text-slate-600">Premium .com domains are digital real estate that appreciates over time. A solid asset for any portfolio.</p>
             </div>
         </div>
@@ -68,7 +73,7 @@
             <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
                 <div class="text-left">
                     <h2 class="text-4xl font-bold mb-2 text-blue-400 italic">Full Domain Portfolio</h2>
-                    <p class="text-slate-400">Discover more high-value assets available for sale.</p>
+                    <p class="text-slate-400">Direct links to acquisition pages for our curated list.</p>
                 </div>
                 <a href="https://www.atom.com/premium-domains-for-sale/rm/56YB2v84Ed" class="bg-blue-600 hover:bg-blue-500 px-6 py-3 rounded-lg font-bold transition">
                     Browse All on Atom →
@@ -76,82 +81,111 @@
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                <!-- Domain List -->
-                <div class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 transition cursor-default">apex.c</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 transition cursor-default">craft.c</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 transition cursor-default">gandisas.com</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 transition cursor-default text-blue-400 font-semibold italic">datastud.co</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 transition cursor-default">adsmeda.xyz</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 transition cursor-default">rypto.c</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 transition cursor-default">energeti.c</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 transition cursor-default">destny.nl</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 transition cursor-default">petdocktor.de</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 transition cursor-default">cosmi.c</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 transition cursor-default">jjcunn.com</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 transition cursor-default">galacti.c</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 transition cursor-default">gxyjjt.org</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 transition cursor-default">axiom.c</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 transition cursor-default">libaixiao.org</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 transition cursor-default">yjyzw.net</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 transition cursor-default text-blue-400 italic">yjjt.info</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 transition cursor-default">eurasianunion.org</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 transition cursor-default">dubistnichttallein.de</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 transition cursor-default">consiouscommunity.org</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 transition cursor-default">motus.bike</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 transition cursor-default">kostenlossspielen.de</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 transition cursor-default">pcr24.de</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 transition cursor-default">cbx.one</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 transition cursor-default">numeri.c</div>
+                <!-- Clickable Domain List -->
+                <a href="https://www.atom.com/view/name/apex.c" target="_blank" class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition text-center text-sm">apex.c</a>
+                <a href="https://www.atom.com/view/name/craft.c" target="_blank" class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition text-center text-sm">craft.c</a>
+                <a href="https://www.atom.com/view/name/gandisas.com" target="_blank" class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition text-center text-sm">gandisas.com</a>
+                <a href="https://www.atom.com/view/name/datastud.co" target="_blank" class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition text-center text-sm text-blue-400 font-semibold italic">datastud.co</a>
+                <a href="https://www.atom.com/view/name/adsmeda.xyz" target="_blank" class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition text-center text-sm">adsmeda.xyz</a>
+                <a href="https://www.atom.com/view/name/rypto.c" target="_blank" class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition text-center text-sm">rypto.c</a>
+                <a href="https://www.atom.com/view/name/energeti.c" target="_blank" class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition text-center text-sm">energeti.c</a>
+                <a href="https://www.atom.com/view/name/destny.nl" target="_blank" class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition text-center text-sm">destny.nl</a>
+                <a href="https://www.atom.com/view/name/petdocktor.de" target="_blank" class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition text-center text-sm">petdocktor.de</a>
+                <a href="https://www.atom.com/view/name/cosmi.c" target="_blank" class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition text-center text-sm">cosmi.c</a>
+                <a href="https://www.atom.com/view/name/jjcunn.com" target="_blank" class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition text-center text-sm">jjcunn.com</a>
+                <a href="https://www.atom.com/view/name/galacti.c" target="_blank" class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition text-center text-sm">galacti.c</a>
+                <a href="https://www.atom.com/view/name/gxyjjt.org" target="_blank" class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition text-center text-sm">gxyjjt.org</a>
+                <a href="https://www.atom.com/view/name/axiom.c" target="_blank" class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition text-center text-sm">axiom.c</a>
+                <a href="https://www.atom.com/view/name/libaixiao.org" target="_blank" class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition text-center text-sm">libaixiao.org</a>
+                <a href="https://www.atom.com/view/name/yjyzw.net" target="_blank" class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition text-center text-sm">yjyzw.net</a>
+                <a href="https://www.atom.com/view/name/yjjt.info" target="_blank" class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition text-center text-sm text-blue-400 italic">yjjt.info</a>
+                <a href="https://www.atom.com/view/name/eurasianunion.org" target="_blank" class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition text-center text-sm">eurasianunion.org</a>
+                <a href="https://www.atom.com/view/name/dubistnichttallein.de" target="_blank" class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition text-center text-sm">dubistnichttallein.de</a>
+                <a href="https://www.atom.com/view/name/consiouscommunity.org" target="_blank" class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition text-center text-sm">consiouscommunity.org</a>
+                <a href="https://www.atom.com/view/name/motus.bike" target="_blank" class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition text-center text-sm">motus.bike</a>
+                <a href="https://www.atom.com/view/name/kostenlossspielen.de" target="_blank" class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition text-center text-sm">kostenlossspielen.de</a>
+                <a href="https://www.atom.com/view/name/pcr24.de" target="_blank" class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition text-center text-sm">pcr24.de</a>
+                <a href="https://www.atom.com/view/name/cbx.one" target="_blank" class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition text-center text-sm">cbx.one</a>
+                <a href="https://www.atom.com/view/name/numeri.c" target="_blank" class="bg-slate-800 p-3 rounded-lg border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition text-center text-sm">numeri.c</a>
             </div>
         </div>
     </section>
 
-    <!-- External Marketplaces (Referral Section) -->
-    <section class="max-w-7xl mx-auto px-4 py-20">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-            <div class="text-left">
-                <h2 class="text-4xl font-black mb-6 uppercase tracking-tighter">Premium Market Access</h2>
-                <p class="text-lg text-slate-600 mb-8 leading-relaxed">
-                    We list our premium inventory across top-tier platforms. Whether you prefer the security of **Atom**, the global reach of **Sedo**, or the convenience of **Afternic**, we have you covered.
-                </p>
-                <div class="space-y-4">
-                    <!-- Atom Referral -->
-                    <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
-                        <h4 class="font-bold text-blue-800 text-lg mb-2">Featured Portfolio on Atom</h4>
-                        <p class="text-blue-700 text-sm mb-4">Explore a curated selection of brandable names with logo concepts.</p>
-                        <a href="https://www.atom.com/premium-domains-for-sale/rm/56YB2v84Ed" target="_blank" class="text-blue-900 font-bold underline">Visit Atom Collection →</a>
-                    </div>
-                    
-                    <!-- Placeholder for other providers -->
-                    <div class="flex gap-4">
-                        <div class="flex-1 bg-white p-4 rounded-xl border border-slate-200 opacity-50">
-                            <span class="block font-bold text-slate-800">Sedo Marketplace</span>
-                            <span class="text-xs">Coming Soon</span>
-                        </div>
-                        <div class="flex-1 bg-white p-4 rounded-xl border border-slate-200 opacity-50">
-                            <span class="block font-bold text-slate-800">Afternic Network</span>
-                            <span class="text-xs">Coming Soon</span>
-                        </div>
-                    </div>
+    <!-- External Marketplaces Section -->
+    <section class="max-w-7xl mx-auto px-4 py-24">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-black uppercase tracking-tighter mb-4">Our Global Partners</h2>
+            <p class="text-slate-500 max-w-2xl mx-auto">We utilize the industry's most trusted marketplaces to ensure secure transactions and instant domain ownership transfers.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Market 1: Atom -->
+            <div class="bg-white border border-slate-200 p-8 rounded-3xl shadow-sm hover:shadow-md transition">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">A</div>
+                    <h3 class="text-xl font-bold">Atom (Squadhelp)</h3>
                 </div>
+                <p class="text-slate-600 text-sm mb-6">The world's #1 brand naming platform. Offers AI-driven insights and premium branding packages.</p>
+                <a href="https://www.atom.com" target="_blank" class="inline-flex items-center text-blue-600 font-bold hover:underline">
+                    View Referral Program <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
             </div>
-            <div class="bg-blue-600 rounded-[3rem] p-12 text-white shadow-3xl">
-                <h3 class="text-3xl font-bold mb-4">Invest in your brand today.</h3>
-                <p class="mb-8 opacity-90">A great domain name is the foundation of digital success. Don't let your competitors secure the name you deserve.</p>
-                <div class="space-y-3">
-                    <div class="flex items-center gap-3">
-                        <span class="bg-white/20 p-2 rounded-lg">✓</span>
-                        <span>Instant Domain Transfer</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <span class="bg-white/20 p-2 rounded-lg">✓</span>
-                        <span>Full Ownership Control</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <span class="bg-white/20 p-2 rounded-lg">✓</span>
-                        <span>Expert Support During Transfer</span>
-                    </div>
+
+            <!-- Market 2: Afternic -->
+            <div class="bg-white border border-slate-200 p-8 rounded-3xl shadow-sm hover:shadow-md transition">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center text-white font-bold">An</div>
+                    <h3 class="text-xl font-bold">Afternic</h3>
                 </div>
+                <p class="text-slate-600 text-sm mb-6">Part of GoDaddy, Afternic offers the largest distribution network in the domain industry.</p>
+                <a href="https://www.afternic.com" target="_blank" class="inline-flex items-center text-green-600 font-bold hover:underline">
+                    Partner With Afternic <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </div>
+
+            <!-- Market 3: Dan.com -->
+            <div class="bg-white border border-slate-200 p-8 rounded-3xl shadow-sm hover:shadow-md transition">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 bg-pink-600 rounded-lg flex items-center justify-center text-white font-bold">D</div>
+                    <h3 class="text-xl font-bold">Dan.com</h3>
+                </div>
+                <p class="text-slate-600 text-sm mb-6">Pioneering "Lease to Own" options and the most transparent domain transfer processes available.</p>
+                <a href="https://dan.com" target="_blank" class="inline-flex items-center text-pink-600 font-bold hover:underline">
+                    Join Affiliate Network <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </div>
+
+            <!-- Market 4: Namecheap -->
+            <div class="bg-white border border-slate-200 p-8 rounded-3xl shadow-sm hover:shadow-md transition">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 bg-orange-600 rounded-lg flex items-center justify-center text-white font-bold">Nc</div>
+                    <h3 class="text-xl font-bold">Namecheap</h3>
+                </div>
+                <p class="text-slate-600 text-sm mb-6">Trusted by millions. Their marketplace is ideal for fast, high-volume domain sales and flips.</p>
+                <a href="https://www.namecheap.com" target="_blank" class="inline-flex items-center text-orange-600 font-bold hover:underline">
+                    Affiliate Program <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </div>
+
+            <!-- Market 5: Dynadot -->
+            <div class="bg-white border border-slate-200 p-8 rounded-3xl shadow-sm hover:shadow-md transition">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold">Dy</div>
+                    <h3 class="text-xl font-bold">Dynadot</h3>
+                </div>
+                <p class="text-slate-600 text-sm mb-6">Known for advanced domain management tools and competitive commission structures for partners.</p>
+                <a href="https://www.dynadot.com" target="_blank" class="inline-flex items-center text-indigo-600 font-bold hover:underline">
+                    Earn with Dynadot <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </div>
+
+            <!-- CTA Portfolio Link -->
+            <div class="bg-blue-600 p-8 rounded-3xl shadow-lg flex flex-col justify-center items-center text-center text-white">
+                <h3 class="text-xl font-bold mb-2 italic">More Premium Names?</h3>
+                <p class="text-sm opacity-80 mb-6">Explore our curated high-ROI portfolio on Atom.</p>
+                <a href="https://www.atom.com/premium-domains-for-sale/rm/56YB2v84Ed" target="_blank" class="bg-white text-blue-600 px-6 py-2 rounded-xl font-bold hover:bg-blue-50 transition">
+                    Open Portfolio
+                </a>
             </div>
         </div>
     </section>
@@ -159,8 +193,8 @@
     <!-- Footer -->
     <footer class="bg-slate-100 py-12 border-t border-slate-200">
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <p class="text-slate-500 font-medium mb-4 italic">Looking for a specific domain? Contact our portfolio manager.</p>
-            <p class="text-xs text-slate-400">© 2026 Premium Domains Collective. All listed domains are verified assets.</p>
+            <p class="text-slate-500 font-medium mb-4 italic">Looking for a specific domain? Contact our portfolio manager via any marketplace listed above.</p>
+            <p class="text-xs text-slate-400">© 2026 Premium Domains Collective. Secure transfer via Escrow.com or Marketplace partners.</p>
         </div>
     </footer>
 
